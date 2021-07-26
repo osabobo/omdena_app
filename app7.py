@@ -14,7 +14,7 @@ options = [i for i in df1]
 selected_stock=st.selectbox("Select the Latitude and Longitude  so that you can identify the location and use the plus and minus sign on the map to zoom",options)
 def map_h(line):
     # center on Liberty Bell
-    m = folium.Map(line, zoom_start=9)
+    m = folium.Map(line, zoom_start=3)
     # add marker for Liberty Bell
     tooltip = "Liberty Bell"
     folium.Marker(
