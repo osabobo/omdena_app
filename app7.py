@@ -7,6 +7,12 @@ DATA_URL = ('nga_lga_zonal_statistics_2016.csv')
 
 st.title('Display table of the dataset of Night time spot in Nigeria')
 data = pd.read_csv(DATA_URL)
+def map_g():
+    map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()], zoom_start=6, control_scale=True)
+    for index, c in data.iterrows():
+        folium.Marker([c['Latitude'], c['Longitude']], popup=c["STATE"]).add_to(map)
+    folium_static(map)
+map_g()
 df = pd.DataFrame({'lat': data['Latitude'], 'lon': data['Longitude']})
 st.write(data)
 df1=df.values.tolist()
