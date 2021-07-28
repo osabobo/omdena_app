@@ -14,9 +14,9 @@ select_maps = st.sidebar.selectbox(
     "What data do you want to see?",
     ("OpenStreetMap", "Stamen Terrain","Stamen Toner")
 )
-selected_stock=st.selectbox("Select the Latitude and Longitude  so that you can identify the location and use the plus and minus sign on the map to zoom",choice)
+selected_stock=st.selectbox("Select the choice",choice)
 data = pd.read_csv(DATA_URL)
-
+st.write(data)
 def map_g():
     map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()],tiles=select_maps, zoom_start=6, control_scale=True,)
     folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['state',selected_stock],key_on="feature.properties.state", fill_color='YlOrRd',
