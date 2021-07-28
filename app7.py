@@ -15,7 +15,7 @@ select_maps = st.sidebar.selectbox(
     "How do you want to see the data?",
     ("OpenStreetMap", "Stamen Terrain","Stamen Toner")
 )
-selected_stock=st.selectbox("Select the choice",choice)
+selected_stock=st.sidebar.radio("Select the choice",choice)
 def map_g():
     map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()],tiles=select_maps, zoom_start=6, control_scale=True,)
     folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['state',selected_stock],key_on="feature.properties.state", fill_color='YlOrRd',
