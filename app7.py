@@ -5,7 +5,7 @@ import folium
 import pandas as pd
 import json
 st.set_page_config(layout="wide")
-json1= json.load(open('nigeria_geojson.geojson'))
+json1= f'nigeria_geojson.geojson'
 DATA_URL= f'Nighttime_and_population_data.csv'
 st.title('Display table of the dataset of Night time spot in Nigeria')
 
