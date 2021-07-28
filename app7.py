@@ -12,7 +12,7 @@ data = pd.read_csv(DATA_URL)
 st.write(data)
 choice=["AREA","PERIMETER","Population"]
 select_maps = st.sidebar.selectbox(
-    "What data do you want to see?",
+    "How do you want to see the data?",
     ("OpenStreetMap", "Stamen Terrain","Stamen Toner")
 )
 selected_stock=st.selectbox("Select the choice",choice)
