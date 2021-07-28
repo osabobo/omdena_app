@@ -3,7 +3,7 @@ import streamlit as st
 from streamlit_folium import folium_static
 import folium
 import pandas as pd
-DATA_URL = ('nga_lga_zonal_statistics_2016.csv')
+DATA_URL = ('Nighttime_and_population_data.csv')
 
 st.title('Display table of the dataset of Night time spot in Nigeria')
 data = pd.read_csv(DATA_URL)
