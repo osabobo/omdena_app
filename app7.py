@@ -26,5 +26,5 @@ def map_g():
     #folium.features.GeoJson('nigeria_geojson.geojson',Name='state',popup=folium.features.GeoJsonPopup(fields=['state'])).add_to(map)
     #for index, c in data.iterrows():
         #folium.Marker([c['Latitude'], c['Longitude']], popup=c["state"]).add_to(map)
-    folium_static(map,width=1000, height=700)
+    folium_static(map,width=800, height=600)
 map_g()
