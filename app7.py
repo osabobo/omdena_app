@@ -8,15 +8,14 @@ st.set_page_config(layout="wide")
 json1= f'nigeria_geojson.geojson'
 DATA_URL= f'Nighttime_and_population_data.csv'
 st.title('Display table of the dataset of Night time spot in Nigeria')
-
+data = pd.read_csv(DATA_URL)
+st.write(data)
 choice=["AREA","PERIMETER","Population"]
 select_maps = st.sidebar.selectbox(
     "What data do you want to see?",
     ("OpenStreetMap", "Stamen Terrain","Stamen Toner")
 )
 selected_stock=st.selectbox("Select the choice",choice)
-data = pd.read_csv(DATA_URL)
-st.write(data)
 def map_g():
     map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()],tiles=select_maps, zoom_start=6, control_scale=True,)
     folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['state',selected_stock],key_on="feature.properties.state", fill_color='YlOrRd',
