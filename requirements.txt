@@ -2,3 +2,4 @@ streamlit==0.82.0
 pandas
 folium
 streamlit_folium
+json
