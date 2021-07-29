@@ -16,6 +16,7 @@ select_maps = st.sidebar.selectbox(
     ("OpenStreetMap", "Stamen Terrain","Stamen Toner")
 )
 selected_stock=st.sidebar.radio("Select the choice",choice)
+st.title('Map of Nigeria')
 def map_g():
     map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()],tiles=select_maps, zoom_start=6, control_scale=True,)
     folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['state',selected_stock],key_on="feature.properties.state", fill_color='YlOrRd',
