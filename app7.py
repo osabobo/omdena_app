@@ -10,7 +10,7 @@ DATA_URL1= f'Night_moderately_low.csv'
 DATA_URL2= f'Nigh_medium_intensity.csv'
 DATA_URL3= f'Nigh_moderate_high_intensity.csv'
 DATA_URL4= f'Night_high_intensity.csv'
-st.title('Display table of the dataset of Night time spot in Nigeria')
+
 
 #choice=
 select_maps = st.sidebar.selectbox(
