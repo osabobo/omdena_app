@@ -32,11 +32,10 @@ if add_selectbox == 'Low':
                            line_opacity=0.2,
                            legend_name='Night Light Class').add_to(map)
         folium.LayerControl().add_to(map)
-        folium.Marker(
-    location=[data['Latitude'].mean(), data['Longitude'].mean()],
-    popup="Mt. Hood Meadows",
-    icon=folium.Icon(icon="cloud"),
-).add_to(map)
+        #folium.Marker(
+    #location=[data['Latitude'].mean(), data['Longitude'].mean()],
+    #popup="Mt. Hood Meadows",
+    #icon=folium.Icon(icon="cloud"),).add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
 
