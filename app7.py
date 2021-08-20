@@ -36,7 +36,7 @@ if add_selectbox == 'Low':
     #location=[data['Latitude'].mean(), data['Longitude'].mean()],
     #popup="Mt. Hood Meadows",
     #icon=folium.Icon(icon="cloud"),).add_to(map)
-    #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
+    folium.features.GeoJson('nigeria_lga.json',name='NAME_2',tooltip =tooltip).add_to(map)
     # Add hover functionality.
 
     #for index, c in data.iterrows():
