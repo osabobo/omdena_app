@@ -55,8 +55,8 @@ if add_selectbox == 'moderately low':
         folium.LayerControl().add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
-        #for index, c in data.iterrows():
-            #folium.Marker([c['Latitude'], c['Longitude']], popup=c["NAME_2"]).add_to(map)
+        for index, c in data.iterrows():
+            folium.Marker([c['Latitude'], c['Longitude']], popup=c["NAME_2"]).add_to(map)
         folium_static(map,width=800, height=500)
     map_g1()
 if add_selectbox == 'medium intensity':
