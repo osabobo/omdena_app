@@ -115,3 +115,5 @@ if add_selectbox == 'high intensity':
         folium_static(map,width=800, height=500)
     map_g4()
 
+link = '[This is about how to use earth engine ](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Earth%20Engine%20Master.ipynb)'
+st.markdown(link, unsafe_allow_html=True)
