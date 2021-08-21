@@ -5,11 +5,12 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 json1= f'nigeria_lga.json'
-DATA_URL= f'Night_low.csv'
-DATA_URL1= f'Night_moderately_low.csv'
-DATA_URL2= f'Nigh_medium_intensity.csv'
-DATA_URL3= f'Nigh_moderate_high_intensity.csv'
-DATA_URL4= f'Night_high_intensity.csv'
+DATA_URL= f'low_intensity.csv'
+DATA_URL1= f'moderately_low_intensity.csv'
+DATA_URL2= f'medium_intensity.csv'
+DATA_URL3= f'moderate_high_intensity.csv'
+DATA_URL4= f'high_intensity.csv'
+
 
 
 #choice=
@@ -27,10 +28,10 @@ if add_selectbox == 'Low':
     def map_g():
         map = folium.Map(location=[data['Latitude'].mean(), data['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         tooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['NAME_2','Night Light Class'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
                            fill_opacity=0.7,
                            line_opacity=0.2,
-                           legend_name='Night Light Class').add_to(map)
+                           legend_name='population density').add_to(map)
         folium.LayerControl().add_to(map)
         #folium.Marker(
     #location=[data['Latitude'].mean(), data['Longitude'].mean()],
@@ -48,10 +49,10 @@ if add_selectbox == 'moderately low':
     def map_g1():
         map = folium.Map(location=[data1['Latitude'].mean(), data1['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         tooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data1,columns=['NAME_2','Night Light Class'],key_on="feature.properties.NAME_2", fill_color='YlGnBu',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data1,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlGnBu',
                            fill_opacity=0.7,
                            line_opacity=0.2,
-                           legend_name='Night Light Class').add_to(map)
+                           legend_name='population density').add_to(map)
         folium.LayerControl().add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
@@ -65,10 +66,10 @@ if add_selectbox == 'medium intensity':
     def map_g2():
         map = folium.Map(location=[data2['Latitude'].mean(), data2['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         fortooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data2,columns=['NAME_2','Night Light Class'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data2,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
                            fill_opacity=0.7,
                            line_opacity=0.2,
-                           legend_name='Night Light Class').add_to(map)
+                           legend_name='population density').add_to(map)
         folium.LayerControl().add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
@@ -83,10 +84,10 @@ if add_selectbox == 'moderate high intensity':
     def map_g3():
         map = folium.Map(location=[data3['Latitude'].mean(), data3['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         tooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data3,columns=['NAME_2','Night Light Class'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data3,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
                            fill_opacity=0.7,
                            line_opacity=0.2,
-                           legend_name='Night Light Class').add_to(map)
+                           legend_name='population density').add_to(map)
         folium.LayerControl().add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
@@ -101,10 +102,10 @@ if add_selectbox == 'high intensity':
     def map_g4():
         map = folium.Map(location=[data4['Latitude'].mean(), data4['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         tooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data4,columns=['NAME_2','Night Light Class'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data4,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
                            fill_opacity=0.7,
                            line_opacity=0.2,
-                           legend_name='Night Light Class').add_to(map)
+                           legend_name='population density').add_to(map)
         folium.LayerControl().add_to(map)
     #folium.features.GeoJson('nigeria_geojson.geojson',name='States',tooltip =tooltip).add_to(map)
     # Add hover functionality.
