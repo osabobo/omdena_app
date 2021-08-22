@@ -20,7 +20,7 @@ select_maps = st.sidebar.selectbox(
 
 )
 add_selectbox = st.sidebar.selectbox(
-    "How would you like to view the map?",
+    "How would you like to view the intensity on map?",
     ("Low", "moderately low","medium intensity","moderate high intensity","high intensity"))
 if add_selectbox == 'Low':
     data = pd.read_csv(DATA_URL)
