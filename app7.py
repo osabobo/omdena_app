@@ -65,7 +65,7 @@ if add_selectbox == 'moderately low':
     def map_g1():
         map = folium.Map(location=[data1['Latitude'].mean(), data1['Longitude'].mean()],tiles=select_maps,attr='My data attribution', zoom_start=6, control_scale=True,)
         tooltip = "Liberty Bell"
-        folium.Choropleth(geo_data=json1,name="choropleth",data=data1,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlGnBu',
+        folium.Choropleth(geo_data=json1,name="choropleth",data=data1,columns=['NAME_2','population density'],key_on="feature.properties.NAME_2", fill_color='YlOrRd',
                            fill_opacity=0.7,
                            line_opacity=0.2,
                            legend_name='population density').add_to(map)
