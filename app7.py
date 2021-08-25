@@ -187,4 +187,4 @@ st.sidebar.markdown(link2, unsafe_allow_html=True)
 link3='[Dataset](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/Dataset_final)'
 st.sidebar.markdown(link3, unsafe_allow_html=True)
 link4='[Data visualisation](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/task/Data_visualization)'
-
+st.sidebar.markdown(link4, unsafe_allow_html=True)
