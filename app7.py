@@ -11,7 +11,7 @@ DATA_URL2= f'medium_intensity.csv'
 DATA_URL3= f'moderate_high_intensity.csv'
 DATA_URL4= f'high_intensity.csv'
 st.sidebar.title('Omdena Lagos, Nigeria')
-st.sidebar.title('Omdena Lagos, Nigeria chapter is a part of Omdena that focuses on running open-source AI projects to solve challenges facing our local communities.')
+st.sidebar.text('Omdena Lagos, Nigeria chapter is a part of Omdena that focuses on running open-source AI projects to solve challenges facing our local communities.')
 from PIL import Image
 image = Image.open('omdena_Nigeria.jpg')
 st.sidebar.image(image)
