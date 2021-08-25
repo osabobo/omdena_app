@@ -178,5 +178,13 @@ if add_selectbox == 'high intensity':
         #folium.Marker([c['Latitude'], c['Longitude']], popup=c["LGA"]).add_to(map)
         folium_static(map,width=900, height=800)
     map_g4()
-link = '[This is about how to use earth engine ](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Earth%20Engine%20Master.ipynb)'
+link = '[Nighttime Code ](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Nighttime_light/Earth%20Engine%20Master.ipynb)'
 st.sidebar.markdown(link, unsafe_allow_html=True)
+link1='[Presentation](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Nighttime_light/Omdena%20Night%20Time%20Task%20Final%20Updated%20report.pptx)'
+st.sidebar.markdown(link1, unsafe_allow_html=True)
+link2='[Data Modeling code](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Data_Modeling/Omdena%20cluster%20model.ipynb)'
+st.sidebar.markdown(link2, unsafe_allow_html=True)
+link3='[Dataset](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/Dataset_final)'
+st.sidebar.markdown(link3, unsafe_allow_html=True)
+link4='[Data visualisation](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/task/Data_visualization)'
+
