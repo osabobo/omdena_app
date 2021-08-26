@@ -180,7 +180,7 @@ if add_selectbox == 'high intensity':
     map_g4()
 link = '[Nighttime Code ](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Nighttime_light/Earth%20Engine%20Master.ipynb)'
 st.sidebar.markdown(link, unsafe_allow_html=True)
-link1='[Presentation](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Nighttime_light/Omdena%20Night%20Time%20Task%20Final%20Updated%20report.pptx)'
+link1='[Presentation](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/Presentation)'
 st.sidebar.markdown(link1, unsafe_allow_html=True)
 link2='[Data Modeling code](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/task/Data_Modeling/Omdena%20cluster%20model.ipynb)'
 st.sidebar.markdown(link2, unsafe_allow_html=True)
@@ -188,3 +188,5 @@ link3='[Dataset](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src
 st.sidebar.markdown(link3, unsafe_allow_html=True)
 link4='[Data visualisation](https://github.com/OmdenaAI/omdena-nigeria-energy/tree/main/src/final%20deliverables/task/Data_visualization)'
 st.sidebar.markdown(link4, unsafe_allow_html=True)
+link5='[Contributors](https://github.com/OmdenaAI/omdena-nigeria-energy/blob/main/src/final%20deliverables/Lagos_Energy_Contributors.ipynb)'
+st.sidebar.markdown(link5, unsafe_allow_html=True)
